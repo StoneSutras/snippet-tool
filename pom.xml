@@ -15,6 +15,8 @@
     </organization>
 
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -53,6 +55,8 @@
             <groupId>net.sf.saxon</groupId>
             <artifactId>saxon9he</artifactId>
             <version>9.2.1.2</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/saxon9he.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.apache.xmlrpc</groupId>
@@ -73,21 +77,29 @@
             <groupId>net.java.dev</groupId>
             <artifactId>colorchooser</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/colorchooser.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.exist</groupId>
             <artifactId>exist</artifactId>
             <version>1.5-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/exist.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.exist</groupId>
             <artifactId>exist-optional</artifactId>
             <version>1.5-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/exist-optional.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.exist</groupId>
             <artifactId>xmldb</artifactId>
             <version>1.5-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/xmldb.jar</systemPath>
         </dependency>
     </dependencies>
     <build>
@@ -122,7 +134,7 @@
                     </archive>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.codehaus.mojo.webstart</groupId>
                 <artifactId>webstart-maven-plugin</artifactId>
                 <version>1.0-beta-1</version>
@@ -165,7 +177,7 @@
                     <unsign>true</unsign>
                     <verifyjar>false</verifyjar>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
         </plugins>
     </build>
