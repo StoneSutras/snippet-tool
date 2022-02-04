@@ -359,3 +359,6 @@ buildNumber.properties
 
 # TBD: license might not allow it to add to EPL licensed repositories, see https://docs.microsoft.com/en-us/typography/font-list/arial-unicode-ms
 ARIALUNI.TTF
+
+# TBD: remove dependencies from repo
+!lib/*.jar
